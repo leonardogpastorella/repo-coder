@@ -14,7 +14,7 @@ body {
 
 
 
-/*icno*/
+/*icono*/
 .hamburguesa {
     color: black;
     font-size: 30px;
@@ -37,6 +37,12 @@ li {
 .logo-header img {
     width: 300px;
 
+}
+/*media query del logo para mobil*/
+@media (max-width: 600px) {
+    .logo-header img {
+        width: 180px;
+    }
 }
 
 header {
@@ -172,8 +178,7 @@ section .muebles-grilla {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+    
 
 }
 
@@ -202,6 +207,14 @@ background-color:  rgb(12, 63, 55);
 transform: scale(0.95); 
 }
 
+/* responsivo formulario de contacto */
+
+@media (max-width: 768px) {
+    .contacto {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 /*seccion grilla pag. muebles */
 section .fotos-muebles img {
@@ -219,8 +232,7 @@ section .fotos-muebles {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
+   
 
     
 }
