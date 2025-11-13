@@ -12,14 +12,9 @@ body {
     background-color: darkgray;
 }
 
-/*estilos del header*/
 
-/*.header{
-    position:sticky;
-    
-} */
 
-/*icóno*/
+/*icno*/
 .hamburguesa {
     color: black;
     font-size: 30px;
@@ -142,11 +137,11 @@ section {
 }
 
 /*estilos del main*/
+
 main.container {
     width: min(1200px, 90%);
     margin: 0 auto;
 }
-
 
 /*estilos del encabezado de las paginas*/
 .encabezado {
@@ -155,12 +150,11 @@ main.container {
     margin-bottom: 2rem;
 }
 
-/*estilos del texto importante*/
-#importante {
+
+.main-container .section p:last-of-type {
     font-weight: bold;
     color: rgb(49, 51, 77);
 }
-
 
 /*estilos de las imagenes con grid*/
 section .muebles-grilla img {
@@ -222,13 +216,25 @@ section .fotos-muebles img {
 
 section .fotos-muebles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 30px;
     margin-left: 40px;
     margin-right: 40px;
 
+    
 }
+
+section .fotos-muebles img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+section .fotos-muebles img:active {
+    transform: scale(1.90);
+}
+
+
 /*grilla pagina asientos*/
 .section-fotos .asientos img{
     width: 100%;
@@ -272,9 +278,46 @@ footer {
     text-align: right;
 }
 
-.logo-footer img {
-    width: 100px;
+.redes-sociales a {
+    margin-left: 10px;
+    color: black;
+    font-size: 20px;
+}
 
+
+footer p {
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+    color: black;
+}
+footer a:hover {
+    color: rgb(74, 116, 91);
+    
+    }
+
+/*estilos responsivos*/
+@media (max-width: 768px) {
+    section .muebles-grilla {
+        grid-template-columns: 1fr;
+    }
+
+    section .fotos-muebles {
+        grid-template-columns: 1fr;
+    }
+
+    .section-fotos .asientos {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        text-align: center;
+    }
+
+    .redes-sociales {
+        text-align: center;
+        margin-top: 1rem;
+    }
 }
 
 
